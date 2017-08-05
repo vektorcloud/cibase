@@ -3,6 +3,6 @@ FROM quay.io/vektorcloud/docker:latest
 ENV LANG=C.UTF-8
 
 RUN apk add --no-cache bash git mercurial sudo ca-certificates openssh-client \
-                       tar gzip parallel net-tools unzip zip bzip2 jq
+                       tar gzip parallel net-tools unzip zip bzip2 jq make
 
 CMD ["/bin/sh"]
