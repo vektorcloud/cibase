@@ -6,6 +6,7 @@ ENV LANG=C.UTF-8 \
 RUN apk add --no-cache bash \
   bzip2 \
   ca-certificates \
+  findutils \
   git \
   gzip \
   jq \
@@ -23,5 +24,7 @@ RUN apk add --no-cache bash \
 
 RUN wget "https://bootstrap.pypa.io/get-pip.py" -O /dev/stdout | python \
   && pip install awscli==$AWSCLI_VERSION
+
+ENTRYPOINT []
 
 CMD ["/bin/sh"]
