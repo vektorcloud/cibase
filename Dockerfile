@@ -6,6 +6,7 @@ ENV LANG=C.UTF-8 \
 RUN apk add --no-cache bash \
   bzip2 \
   ca-certificates \
+  curl \
   findutils \
   git \
   gzip \
